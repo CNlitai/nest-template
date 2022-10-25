@@ -1,2 +1,10 @@
 TEST_VALUE:
   name: 'CN-litai'
+
+FEISHU_CONFIG:
+  FEISHU_URL: https://open.feishu.cn/open-apis
+  FEISHU_API_HOST: https://open.feishu.cn
+  FEISHU_APP_ID: cli_a2ed5e7be4f9500d
+  FEISHU_APP_SECRET: HtMNYItwGbdp6yJv4o2j1fLrplwl6Mem
+
+APP_TOKEN_CACHE_KEY: APP_TOKEN_CACHE_KEY
