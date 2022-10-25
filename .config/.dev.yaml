@@ -8,3 +8,31 @@ FEISHU_CONFIG:
   FEISHU_APP_SECRET: HtMNYItwGbdp6yJv4o2j1fLrplwl6Mem
 
 APP_TOKEN_CACHE_KEY: APP_TOKEN_CACHE_KEY
+
+MONGODB_CONFIG:
+  name: "fast_gateway_test"          # 自定义次数据库链接名称
+  type: mongodb                      # 数据库链接类型
+  url: "mongodb://localhost:27017"   # 数据库链接地址
+  username: "root"                   # 数据库链接用户名
+  password: "root"                 # 数据库链接密码
+  database: "fast_gateway_test"      # 数据库名
+  entities: "mongo"                  # 自定义加载类型
+  logging: false                     # 数据库打印日志
+  synchronize: true                  # 是否开启同步数据表功能
+
+MYSQL_CONFIG:
+  name: "user-test"
+  type: "mysql"
+  host: "localhost"
+  port: 3306
+  username: "root"
+  password: "root"
+  database: "user-test"
+  entities: "mysql" # 这里的命名一定要跟 MongoDB 里面的配置命名区分开
+  synchronize: true
+
+REDIS_CONFIG:
+  host: "localhost"  # redis 链接
+  port: 6379         # redis 端口
+  auth: "root"       # redis 连接密码
+  db: 1              # redis 数据库
